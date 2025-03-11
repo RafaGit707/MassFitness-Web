@@ -102,12 +102,17 @@ ul li a {
 }
 
 header {
-    display: flex;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.topheader {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
