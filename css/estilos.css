@@ -19,12 +19,13 @@ html {
 }
 
 main {
+    background-color: white;
     min-height: calc(100vh - var(--header-height));
 }
 
-main.padding-active {
+/* main.padding-active {
     padding-top: var(--header-height);
-}
+} */
 
 /* MEDIA */
 
@@ -45,11 +46,6 @@ main.padding-active {
     height: 80px;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
 .video-coche {
     width: 100%;
     height: fit-content;
@@ -60,7 +56,46 @@ main.padding-active {
     width: 100%;
 }
 
-/* NAV HEADER */
+.img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* HEADER */
+
+.container-header {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: var(--header-height);
+}
+
+.div-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.titulo-top {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.img-titulo {
+    margin: 40px;
+}
+
+/* TOPHEADER */
 
 .logo {
     display: flex;
@@ -332,12 +367,6 @@ header nav ul li a:hover {
 
 /* INTRO 1 */
 
-.hero {
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
 .overlay {
     position: absolute;
     top: 75%;
@@ -351,7 +380,7 @@ header nav ul li a:hover {
 /* INTRO */
 
 .intro {
-    padding: 40px;
+    padding: var(--header-height);
     text-align: center;
     font-size: large;
     background-color: #2e2f36;

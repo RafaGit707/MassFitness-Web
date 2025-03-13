@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    
     const header = document.querySelector("header");
     const main = document.querySelector("main");
     const triggerHeight = window.innerHeight - header.offsetHeight;
+
 
     function checkScroll() {
         if (window.scrollY > triggerHeight) {
