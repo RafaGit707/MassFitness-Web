@@ -855,6 +855,34 @@ svg {
 /* Para pantallas menores a 1024px (tablets y móviles grandes) */
 @media (max-width: 1024px) {
 
+    .form-container {
+        padding: 42px;
+        width: 600px;
+    }
+
+    .form-container h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 22px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+
+    .form-group input {
+        font-size: 16px;
+        padding: 8px 0;
+        width: 100%;
+    }
+
     .img-titulo {
         margin: 34px;
     }
