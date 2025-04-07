@@ -23,6 +23,10 @@ main {
     min-height: calc(100vh - var(--header-height));
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* main.padding-active {
     padding-top: var(--header-height);
 } */
